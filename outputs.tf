@@ -37,6 +37,11 @@ output "resource_id" {
   value       = azurerm_key_vault.this.id
 }
 
+output "resource" {
+  description = "The full azurerm_key_vault resource."
+  value       = azurerm_key_vault.this
+}
+
 output "secrets" {
   description = <<DESCRIPTION
 A map of secret keys to secret values. The secret value is the entire azurerm_key_vault_secret resource.
