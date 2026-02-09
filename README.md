@@ -559,6 +559,10 @@ Description: The name of the key vault.
 
 Description: A map of private endpoints. The map key is the supplied input to var.private\_endpoints. The map value is the entire azurerm\_private\_endpoint resource.
 
+### <a name="output_resource"></a> [resource](#output\_resource)
+
+Description: The full azurerm\_key\_vault resource.
+
 ### <a name="output_resource_id"></a> [resource\_id](#output\_resource\_id)
 
 Description: The Azure resource id of the key vault.
