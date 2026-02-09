@@ -32,6 +32,12 @@ output "private_endpoints" {
   value       = var.private_endpoints_manage_dns_zone_group ? azurerm_private_endpoint.this : azurerm_private_endpoint.this_unmanaged_dns_zone_groups
 }
 
+output "resource" {
+  description = "This is the full resource output for the Key Vault resource."
+  sensitive   = true
+  value       = azurerm_key_vault.this
+}
+
 output "resource_id" {
   description = "The Azure resource id of the key vault."
   value       = azurerm_key_vault.this.id
